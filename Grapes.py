@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[2]:
 
 
 # imports
@@ -26,7 +26,7 @@ pd.set_option('display.max_colwidth', None)
 class MyWindow:
     def __init__(self, win):
         
-        self.lbl=Label(window, text = 'Running this program will:\n\n1. Retrieve grape listings from winebusiness.com\n\n2. Export listings to an excel spreadsheet titled "Grape_Data"\nwhich is saved on your desktop')
+        self.lbl=Label(window, text = 'Running this program will:\n\n1. Retrieve grape listings from winebusiness.com\n\n2. Exports results to an excel spreadsheet')
         self.lbl.place(relx=.5, rely=0.2, anchor=CENTER)
         
         self.b1=Button(win, text='Run program', command=self.run)
@@ -167,4 +167,10 @@ mywin=MyWindow(window)
 window.title('Grape Scraper')
 window.geometry("400x300+10+10")
 window.mainloop()
+
+
+# In[ ]:
+
+
+
 
